@@ -6,7 +6,7 @@
 import React from 'react';
 import * as l10n from '../../../lib/l10n';
 import moment from 'moment';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import './Dashboard.css';
 
 'use strict';
@@ -23,12 +23,8 @@ l10n.register([
 moment.locale(navigator.language);
 
 export default class Dashboard extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
-    let mailvelope_help_url = "https://www.mailvelope.com/en/help";
+    const mailvelopeHelpUrl = "https://www.mailvelope.com/en/help";
     return (
       <div className="container">
         <div className="dashboard">
@@ -60,7 +56,7 @@ export default class Dashboard extends React.Component {
             </Link>
           </div>
           <div className="col-md-3">
-            <a href={mailvelope_help_url} className="dashboard-item" target="_blank">
+            <a href={mailvelopeHelpUrl} className="dashboard-item" target="_blank">
               <i className="fa fa-question-circle"></i>
               <span>{l10n.map.dashboard_link_help}</span>
             </a>

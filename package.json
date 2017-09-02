@@ -43,6 +43,7 @@
     "chai": "^4.1.1",
     "css-loader": "^0.28.4",
     "eslint-plugin-react": "^7.1.0",
+    "file-loader": "^0.11.2",
     "grunt": "^1.0.0",
     "grunt-bump": "^0.8.0",
     "grunt-contrib-clean": "^1.1.0",
@@ -62,6 +63,7 @@
     "sinon": "^3.2.1",
     "string-replace-loader": "^1.2.0",
     "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
     "web-ext": "^2.0.0",
     "webpack": "^3.5.5"
   },

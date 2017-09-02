@@ -18,5 +18,13 @@
 import {initController} from './controller/main.controller';
 import {initScriptInjection} from './lib/inject';
 
-initController()
-.then(initScriptInjection);
+initController().then(initScriptInjection);
+
+// Open the install landing page right after the plugin is installed.
+chrome.runtime.onInstalled.addListener(details => {
+  if (details.reason == "install") {
+    chrome.tabs.create({
+      url: "/app/app.html#/install"
+    });
+  }
+});

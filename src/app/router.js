@@ -5,8 +5,9 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {HashRouter} from 'react-router-dom';
+import {Switch, Route, HashRouter} from 'react-router-dom';
 import {App} from './app';
+import InstallLandingPage from './install/components/LandingPage';
 
 document.addEventListener('DOMContentLoaded', init);
 
@@ -18,7 +19,10 @@ function init() {
   const root = document.createElement('div');
   ReactDOM.render((
     <HashRouter>
-      <App />
+      <Switch>
+        <Route exact path="/install" component={InstallLandingPage} />
+        <Route path="/" component={App} />
+      </Switch>
     </HashRouter>
   ), document.body.appendChild(root));
 }
