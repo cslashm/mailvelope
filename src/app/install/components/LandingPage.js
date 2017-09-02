@@ -33,9 +33,8 @@ export default class LandingPage extends Component {
         <div className="landingpage">
           <div className="col-md-10">
             <h1>Welcome to Mailvelope!</h1>
-            <p>Click on the mailvelope icon <span className="mailvelopeicon">
-              <img src={cyrptographyIcon}height="25px"></img></span>
-              in your browser toolbar to begin with the configuration.
+            <p>
+              Click on the mailvelope icon <span className="mailvelopeicon"><img src={cyrptographyIcon}height="25px"></img></span> in your browser toolbar to begin with the configuration.
             </p>
             <p>
               <img src={screenshot} alt="Illustration of clicking on the mailvelope icon" className="gif-illustration"/>
